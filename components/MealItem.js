@@ -1,7 +1,14 @@
+import Image from "next/image";
 const MealItem = ({ meal }) => {
   return (
     <div className="w-1/4 p-8 shadow-lg rounded-lg bg-yellow-50">
-      <img src={meal.image} className="w-auto h-auto" alt="Chicken Salad" />
+      <Image
+        src={meal.image}
+        width={200}
+        height={250}
+        className="w-auto h-auto"
+        alt="something"
+      />
       <div className="text-center py-2">
         <h3 className="text-xl font-normal">
           {meal.name}

@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useRouter } from "next/router";
+
 const NewMealForm = () => {
   // use of useRef to capture input value
   const mealNameInputRef = useRef();
