@@ -16,7 +16,7 @@ const HomePage = (props) => {
 
 export async function getStaticProps() {
   const client = await MongoClient.connect(
-    `mongodb+srv://Dina:27031986Dina@foodapp.foh1l.mongodb.net/FoodApp?retryWrites=true&w=majority`
+    "mongodb+srv://Dina:27031986Dina@foodapp.foh1l.mongodb.net/FoodApp?retryWrites=true&w=majority"
   );
   const db = client.db();
   const mealsCollection = db.collection("meals");
